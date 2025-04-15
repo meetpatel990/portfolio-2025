@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Ladola - Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- 🌐 Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid pt-2">
+            <a class="navbar-brand" href="#">Portfolio.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center" id="home">
+        <div class="social-bar">
+            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 order-sm-1 text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="Meet.jpg" alt="Meet Ladola" class="img-fluid hero-img">
+                </div>
+                <div class="col-lg-6 order-lg-1 order-sm-2" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="display-4 fw-bold">Hey, I'm <span class="gradient-text">Meet Ladola</span></h1>
+                    <h3 class="mt-3"><span id="typed"></span></h3>
+                    <p class="lead mt-3">I build clean, creative, and responsive websites for the modern web.</p>
+                    <a href="#projects" class="btn btn-primary mt-4 hero-btn">Explore Projects</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="about-section py-5" id="about">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title gradient-text" data-aos="fade-up">About Me</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    I build modern, responsive websites with a focus on user experience.
+                </p>
+            </div>
+            <div class="row justify-content-center gy-4 mb-5">
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
+                    <div class="info-card shadow-sm rounded-4 p-4 d-flex align-items-start gap-3 bg-white">
+                        <i class="bi bi-person-badge-fill fs-3 text-primary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Experience</h6>
+                            <p class="mb-0">Fresher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5" data-aos="fade-left" data-aos-delay="150">
+                    <div class="info-card shadow-sm rounded-4 p-4 d-flex align-items-start gap-3 bg-white">
+                        <i class="bi bi-mortarboard-fill fs-3 text-success"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Education</h6>
+                            <p class="mb-0">BCA in Computer Science</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="200">
+                    <div class="info-card shadow-sm rounded-4 p-4 d-flex align-items-start gap-3 bg-white">
+                        <i class="bi bi-geo-alt-fill fs-3 text-danger"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Location</h6>
+                            <p class="mb-0">India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5" data-aos="fade-left" data-aos-delay="250">
+                    <div class="info-card shadow-sm rounded-4 p-4 d-flex align-items-start gap-3 bg-white">
+                        <i class="bi bi-stars fs-3 text-warning"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Speciality</h6>
+                            <p class="mb-0">front-end web Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="skills-section px-md-5" data-aos="fade-up" data-aos-delay="300">
+                <h4 class="fw-bold mb-4 text-center">Technical Skills</h4>
+                <div class="row">
+                    <!-- HTML & CSS on the same line -->
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>HTML</span><span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>CSS</span><span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bootstrap & JS on the same line -->
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Bootstrap</span><span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-bar">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>JavaScript</span><span>10%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="10%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-5" id="projects">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title gradient-text" data-aos="fade-up">My Projects</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Here are some cool things I've built recently.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Project Card Template -->
+                <!-- Repeat this block with different data -->
+    
+                <!-- Campushire -->
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="150">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="campushire.png" alt="Campushire" class="project-img">
+                                <h5 class="project-title mt-4">Campushire</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Campushire</h5>
+                                <p>A platform for campus recruitment and job applications.</p>
+                                <a href="https://campushire.vercel.app/" target="_blank" class="btn-glow-icon mt-2">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Eyewear -->
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="eyewear.png" alt="Eyewear" class="project-img">
+                                <h5 class="project-title mt-4">Eyewear</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Eyewear</h5>
+                                <p>Modern eyewear eCommerce platform with product inspired by Lenskart.</p>
+                                <a href="https://eyewear5.vercel.app/" target="_blank" class="btn-glow-icon mt-2">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Bus Booking -->
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="250">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pho17.png" alt="Bus Booking" class="project-img">
+                                <h5 class="project-title mt-4">Bus Booking</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Bus Booking</h5>
+                                <p>Bus reservation platform inspired by RedBus UI.</p>
+                                <a href="https://meet287.github.io/redbus/" target="_blank" class="btn-glow-icon mt-2">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Hotel Booking -->
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="bluestay1.png" alt="Hotel Booking" class="project-img">
+                                <h5 class="project-title mt-4">Hotel Booking</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Hotel Booking</h5>
+                                <p>Hotel reservation UI with smooth navigation and booking flow.</p>
+                                <a href="https://githubmalay.github.io/bluestay/" target="_blank" class="btn-glow-icon mt-2">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Template -->
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="350">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pho14.png" alt="Template" class="project-img">
+                                <h5 class="project-title mt-4">Template</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Template</h5>
+                                <p>A clean, responsive landing page design template.</p>
+                                <a href="https://githubmalay.github.io/Toranto/" target="_blank" class="btn-glow-icon mt-2">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Food Hub -->
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="400">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pho12.png" alt="Food Hub" class="project-img">
+                                <h5 class="project-title mt-4">Food Hub</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Food Hub</h5>
+                                <p>Food delivery UI template with interactive design elements.</p>
+                                <a href="https://githubmalay.github.io/template2/" target="_blank" class="btn-glow-icon mt-2">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="150">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pho16.png" alt="Resume Builder" class="project-img">
+                                <h5 class="project-title mt-4">Resume Builder</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Resume Builder</h5>
+                                <p>A handy online tool to create professional resumes with ease and style.</p>
+                                <a href="https://githubmalay.github.io/Resume-creator/" target="_blank" class="btn-glow-icon mt-2">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- To Do List -->
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="450">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pho7.png" alt="To Do List" class="project-img">
+                                <h5 class="project-title mt-4">To Do List</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>To Do List</h5>
+                                <p>Simple and elegant task management app using vanilla JS.</p>
+                                <a href="https://githubmalay.github.io/To-Do-list/" target="_blank" class="btn-glow-icon mt-2">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tic Tac Toe -->
+                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="500">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pho9.png" alt="Tic Tac Toe" class="project-img">
+                                <h5 class="project-title mt-4">Tic Tac Toe</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <h5>Tic Tac Toe</h5>
+                                <p>Fun and interactive Tic Tac Toe game with win-check logic.</p>
+                                <a href="https://githubmalay.github.io/ox-game/" target="_blank" class="btn-glow-icon mt-2">
+                                    <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title gradient-text" data-aos="fade-up">Get In Touch</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">I’d love to hear from you! Drop me a
+                    message.</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form bg-white shadow-lg rounded-4 p-5" data-aos="fade-up" data-aos-delay="200">
+                        <form action="your-form-handler-url" method="POST" id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control form-control-lg" id="name" name="name"
+                                        placeholder="Your Name" required />
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input type="email" class="form-control form-control-lg" id="email" name="email"
+                                        placeholder="Your Email" required />
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control form-control-lg" id="message" name="message" rows="5"
+                                    placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
+                                    <i class="bi bi-send-fill me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="footer-title">Let's Connect</h5>
+                    <p class="footer-desc">Feel free to reach out to me via any of the platforms below.</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"
+                            class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"
+                            class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram"
+                            class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="list-unstyled footer-contact-info mt-3">
+                        <!-- <li><i class="bi bi-telephone-fill me-2"></i>+91 123 456 7890</li> -->
+                        <li><i class="bi bi-envelope-fill me-2"></i>meet66286@gmail.com</li>
+                        <li><i class="bi bi-geo-alt-fill me-2"></i>Ahmedabad, India</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled footer-quick-links">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
+                        <li><a href="#projects" class="text-white">Projects</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row text-center mt-5">
+                <div class="col-12">
+                    <p class="footer-copy-text">© 2025 Meet Ladola. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </button>
+
+
+
+    <!-- Bootstrap & AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="contact-form.js"></script>
+    <script src="script,js.js"></script>
+</body>
+
+</html>
