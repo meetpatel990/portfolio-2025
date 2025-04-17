@@ -64,30 +64,3 @@ function isInViewport(el) {
     return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
 }
 
-
-// Scroll to Top Functionality
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}
-
-// Scroll Progress Bar
-window.onscroll = function() {
-    var scrollTopBtn = document.getElementById("scrollTopBtn");
-    var scrollProgress = document.getElementById("scrollProgress");
-    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-    var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrollPercent = (scrollPosition / scrollHeight) * 100;
-
-    // Set the width of the progress border based on the scroll position
-    scrollProgress.style.borderWidth = `${scrollPercent}%`;
-
-    // Show or hide the button based on scroll position
-    if (scrollPosition > 200) {
-        scrollTopBtn.classList.add("active");
-    } else {
-        scrollTopBtn.classList.remove("active");
-    }
-};
